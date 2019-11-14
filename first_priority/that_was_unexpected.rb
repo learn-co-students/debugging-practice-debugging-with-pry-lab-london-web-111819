@@ -1,3 +1,4 @@
+require 'pry'
 class Person
   attr_accessor :name, :candy_lover
 
@@ -23,7 +24,8 @@ class Person
       "Aw sweet, this cat loves them some candy!"
     else
       10.times do
-        "not a ballin candy lover"
+        "not a ballin candy love"
+      end
     end
   end
 end
