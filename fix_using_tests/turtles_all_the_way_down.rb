@@ -9,9 +9,16 @@ def turtles
 end
 
 def turtle_traits(turtles)
+
+  #turtles.map do |turtle|
+  #  turtle[:traits].each do |trait|
+  #    trait
+      
   turtles.map do |turtle|
-    turtle[:traits].each do |trait|
-      trait
+    if turtle[:traits].class == Array
+     turtle[:traits]
+    else
+      turtle[:traits] = [turtle[:traits]]
     end
   end
 end
